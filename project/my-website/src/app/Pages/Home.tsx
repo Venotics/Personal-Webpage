@@ -1,22 +1,20 @@
-import { Outlet, Link } from "react-router-dom";
+"use client";
 
 export default function Home() 
 {
-    return(
+    return (
         <>
-        <nav>
-            <h1>Home Page</h1>
-            <br />
-            <ul>
-                <li>
-                    <Link to="/home">Home</Link>
-                </li>
-                <li>
-                    <Link to="/about">About</Link>
-                </li>
-            </ul>
-        </nav>
-        <Outlet />
+        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+            <b className="mb-2 text-lg">
+                Home Page
+            </b>
+            <li className="mb-2">
+                Welcome to my personal website.
+            </li>
+            <li>
+                Click on one of the links to view a different page.
+            </li>
+        </ol>
         </>
     );
 }
